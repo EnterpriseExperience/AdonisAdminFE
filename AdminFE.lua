@@ -746,7 +746,7 @@ cmd.add({"loopwarn"}, {"loopwarn <player>", "Loop warns a specific player"}, fun
     local LoopFindThePlayer = findplr(loopWarnPlr)
     if LoopFindThePlayer then
         getgenv().feedWarnings = true
-        while getgenV().feedWarnings == true do
+        while getgenv().feedWarnings == true do
         wait()
             local args = {
                 [1] = tostring(LoopFindThePlayer.Name)
