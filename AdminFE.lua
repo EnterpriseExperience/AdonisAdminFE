@@ -1001,7 +1001,7 @@ end)
 cmd.add({"watch", "view"}, {"watch <player>", "Watch the given player"}, function(p)
 	local getViewingPlayer = findplr(p)
 	if getViewingPlayer then
-		camera.CameraSubject = getviewingPlayer.Character:FindFirstChildWhichIsA("Humanoid")
+		camera.CameraSubject = getViewingPlayer.Character:FindFirstChildWhichIsA("Humanoid")
 	end
 end)
 
