@@ -1006,7 +1006,7 @@ cmd.add({"watch", "view"}, {"watch <player>", "Watch the given player"}, functio
 end)
 
 cmd.add({"unwatch", "unview"}, {"unwatch", "Stop watching a player"}, function()
-	if character and character:FindFirstChildwhichIsA("Humanoid") then
+	if character and character:FindFirstChildWhichIsA("Humanoid") then
 		camera.CameraSubject = character:FindFirstChildWhichIsA("Humanoid")
 	end
 end)
